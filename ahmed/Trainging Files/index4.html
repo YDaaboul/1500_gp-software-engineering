@@ -6,14 +6,14 @@
     <title>Document</title>
     <style>
         table {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-            border-collapse: collapse;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            border-collapse:collapse;
             width: 100%;
         }
         
         td, th {
             border: 5px solid #f70808;
-            text-align: left;
+            text-align:center;
             padding: 8px;
         }
         
@@ -26,12 +26,14 @@
     <h1>Table Format</h1>
     <table>
 <tr>
-    <th>Name</th>
-    <th>AGE</th>
+    <th colspan="3">Name</th>
+    <th style="width: 30%;">AGE</th>
     <th>Tall</th>
 </tr>
 <tr>
     <td>AbdelrahmanHussien</td>
+    <td>25 years old</td>
+    <td>170 cm</td>
     <td>25 years old</td>
     <td>170 cm</td>
 </tr>
@@ -39,10 +41,52 @@
 <td>youssef abd</td>
 <td>30 years old</td>
 <td>180 cm</td>
-
+<td>30 years old</td>
+<td>180 cm</td>
 </tr>
 
-
     </table>
+    <br>
+    <table style="border:color(srgb-linear red green blue);">
+        <tr>
+            <th rowspan="3">Name</th>
+            <th style="width: 30%;">AGE</th>
+            <th>Tall</th>
+        </tr>
+        <tr>
+            <td>AbdelrahmanHussien</td>
+            <td>25 years old</td>
+            <td>170 cm</td>
+            <td>25 years old</td>
+            <td>170 cm</td>
+        </tr>
+        <tr>
+        <td>youssef abd</td>
+        <td>30 years old</td>
+        <td>180 cm</td>
+        <td>30 years old</td>
+        <td>180 cm</td>
+        </tr>
+            </table>
+            <br>
+            <h2>An unOrdered HTML List</h2>
+
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Rice</li>
+                <li>Milk</li>
+              </ul>  
+              
+              <h2>An Ordered HTML List</h2>
+              
+              <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>rice</li>
+                <li>Milk</li>
+                <li>captchuno</li>
+              </ol> 
+              
 </body>
 </html>
