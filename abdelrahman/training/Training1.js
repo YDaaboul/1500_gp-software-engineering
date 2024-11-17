@@ -23,7 +23,7 @@
 
 
 let name = "Ahmed";
-let upperName = name.toUppercase();
+let upperName = name.toUpperCase();
 console.log(upperName);
 
 
