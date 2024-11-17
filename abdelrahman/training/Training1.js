@@ -28,5 +28,5 @@
 
 
 let text = "Welcome to Handspace";
-let position = text.indexOf(Handspace); 
+let position = text.indexOf("Handspace"); 
 console.log(position);
