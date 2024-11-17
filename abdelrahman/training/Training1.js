@@ -28,5 +28,13 @@
 
 
 let text = "Welcome to Handspace";
-let position = text.indexOf("Handspace"); 
+let position = text.indexOf(Handspace); 
 console.log(position);
+
+
+
+let num = 1234;
+let trimmedNum = num.trim(); 
+console.log(trimmedNum);
+
+
