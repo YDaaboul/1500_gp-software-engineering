@@ -16,3 +16,6 @@ console.log("Result: " + result);
 
 
 
+let greeting = "Hello, World!";
+let replacedText = greeting.replace("world", "Ahmed"); 
+console.log(replacedText);
