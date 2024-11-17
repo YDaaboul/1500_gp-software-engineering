@@ -22,8 +22,11 @@
 
 
 
-let name = "Ahmed";
-let upperName = name.toUpperCase();
-console.log(upperName);
+// let name = "Ahmed";
+// let upperName = name.toUpperCase();
+// console.log(upperName);
 
 
+let text = "Welcome to Handspace";
+let position = text.indexOf(Handspace); 
+console.log(position);
