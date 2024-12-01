@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Check</title>
+    <script src="password.js" defer></script>
+    <link rel="stylesheet" href="PassPage.css"> 
+</head>
+<body>
+    
+    <div class="alert" , id="content" style="display:none;">
+        <span class="alert-icon">⚠️</span>
+        <span class="alert-message">This is an alert message!</span>
+        <button class="close-btn" onclick="closeAlert()">✖</button>
+
+    </div>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "    \"**/Content.html\": true,": true,
+        "    \"**/styles.css\": true,": true
+    }
+}

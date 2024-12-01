@@ -1,0 +1,171 @@
+* {
+    margin: 10;
+    padding: 20;
+    box-sizing: border-box;}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.Container {
+    display: flex;              /* Enable flexbox */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically (if needed) */  
+
+}
+.warning {
+    background-color: #ffcc00; /* Yellow background */
+    border: 2px solid #e5a900; /* Darker border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0; /* Add some space around */
+    color: #333; /* Text color */
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 50%;   
+}
+
+.warning ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.quiz-container {
+    background-color: rgb(182, 172, 172);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Width for larger screens */
+    width: 90%; /* Responsive width */
+    margin: 40px auto; /* Center horizontally and add vertical spacing */
+    min-height: 150px; /* Minimum height */
+    text-align: center; /* Center text */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    transform:scale(2); /* Zoom effect */
+    transform-origin: center; /* Center the zoom effect */
+}
+
+#student-name {
+    border-color: #777977;
+    border-radius: 3px; /* Changed from percentage to pixels for consistency */
+    border-style: groove;
+    border-width: 6px; /* Fixed space before 'px' */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.name-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.name-input label {
+    margin-bottom: 10px;
+}
+
+.name-input input {
+    padding: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#user-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #444;
+}
+
+.btn {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.hide {
+    display: none;
+}
+
+#answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Increased gap for better spacing */
+    margin-top: 20px;
+}
+
+#answer-buttons button {
+    width: 100%;              /* Fixed width */
+    height: 40px;             /* Fixed height */
+    padding: 0;               /* Remove padding to keep it small */
+    background-color: #f1f1f1;
+    border: 1px solid #010101;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;          /* Adjust font size if necessary */
+}
+
+#answer-buttons button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Additional styles for selected answers */
+.btn.correct {
+    background-color: rgb(255, 7, 15);
+    color: rgb(89, 255, 0);
+}
+
+.btn.incorrect {
+    background-color: red;
+    color: rgb(241, 86, 86);
+}
+
+.btn.selected {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: lightblue; /* Change this to your desired color */
+}
+#result {
+    margin-top: 1000px; /* Space above the results */
+    padding: 20px; /* Increased padding for better readability */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+#correct-answers {
+    margin-top: 20px; /* Space above the correct answers */
+    padding: 20px; /* Increased padding for better readability */
+    background-color: rgba(240, 240, 240, 0.9); /* Light gray background */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: left; /* Align text to the left for better readability */
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basics Formal Student Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Starting Our first PAGE OF QUIZ-->
+
+    <div class="quiz-container">
+        <h1>Basics Formal Student Quiz</h1>
+        <div class="Container">
+            <div class="warning">
+                <ul>
+                    <li>You can't Refresh the page</li>
+                    <li>You can't copy From outsource</li>
+                    <li>You only have 5 Minutes to solve the Quiz</li>
+                    <li>Camera Should Be on Student To make Sure none Helps</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="name-input" class="name-input">
+            <label for="student-name">Enter your name:</label>
+            <input type="text" id="student-name" required>
+            <button id="start-quiz" class="btn">Start Quiz</button>
+        </div>
+        <div id="quiz-content" class="hide">
+            <div id="user-info">
+                <div id="user-name">Time remaining: 05:00</div>
+                <div id="timer">Time remaining: 05:00</div>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="answer-buttons"></div>
+            </div>
+            <button id="next-btn" class="btn hide">Next</button>
+            <button id="submit-btn" class="btn hide">Submit</button>
+            <div id="result" class="hide">
+                <h2 style="background-color: rgb(255, 128, 128);" >Take screenshot and Send it to Whats app Group</h2>
+
+                <h2>Quiz Results</h2>
+                <p id="score"></p>
+                <p id="student-name-result"></p> <!-- Added for student name -->
+                <div id="correct-answers"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
